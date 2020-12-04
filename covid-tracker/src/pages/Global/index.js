@@ -17,9 +17,7 @@ const Global = () =>{
          });
     }, []);
   
-    console.log(con);
-    console.log(rec);
-    console.log(det);
+
 
     return (
     <div className="card">

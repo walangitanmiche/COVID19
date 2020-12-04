@@ -26,22 +26,19 @@ const Global = () =>{
         <div className="card-container">
              <h1>Confirmed
                 <p><CountUp start={0} end={con} delay={1.5} separator=",">
-                     {({ countUpRef }) => (
-                 <span ref={countUpRef} />)} 
+                     {({ countUpRef }) => (<span ref={countUpRef} />)} 
                      </CountUp> </p></h1>
                      </div>
                      <div className="card2-container">
              <h1>Recovery
                 <p><CountUp start={0} end={rec} delay={1.5} separator=",">
-                     {({ countUpRef }) => (
-                 <span ref={countUpRef} />)} 
+                     {({ countUpRef }) => (<span ref={countUpRef} />)} 
                      </CountUp> </p></h1>
                      </div>
                      <div className="card1-container">
              <h1>Deaths
                 <p><CountUp start={0} end={det} delay={1.5} separator=",">
-                     {({ countUpRef }) => (
-                 <span ref={countUpRef} />)} 
+                     {({ countUpRef }) => (<span ref={countUpRef} />)} 
                      </CountUp> </p></h1>
                      </div>
     </div>

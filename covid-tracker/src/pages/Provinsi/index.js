@@ -12,20 +12,43 @@ const Provinsi = () =>{
          .then((response) =>  setUsers(response.data.data) );
     }, []);
    return(
-       <>
-       {users.map((item)=>{
-           return(
-               <Card
-                provinsi={item.provinsi}
-                kasusPositif={item.kasusPosi}
-                kasusSembuh={item.kasusSemb}
-                meninggal={item.kasusMeni}
-               />
-           );
-       }
-       )}
-       
-       </>
+       <div className="center">
+           <table border="1">
+               <tr>
+                   <td>
+                       Provinsi
+                   </td>
+                   <td>
+                       Positif
+                   </td>
+                   <td>
+                       Sembuh
+                   </td>
+                   <td>
+                        Meninggal
+                   </td>
+               </tr>
+               {users.map((item)=>{
+                   return(
+                       <tr>
+                           <td>
+                               {item.provinsi}
+                           </td>
+                           <td>
+                               {item.kasusPosi}
+                           </td>
+                           <td>
+                               {item.kasusSemb}
+                           </td>
+                           <td>
+                               {item.kasusMeni}
+                           </td>
+                       </tr>
+                   )
+               })
+               }
+           </table>
+       </div>
    )
 };
 

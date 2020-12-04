@@ -46,7 +46,7 @@
   padding: 10;
   background-color: orange;
   text-align: center ;
-  width: 200px;
+  width: 270px;
   height: 150px;
 }
 .card1-container {
@@ -58,7 +58,7 @@
   padding: 10;
   background-color:palevioletred;
   text-align: center ;
-  width: 200px;
+  width: 270px;
   height: 150px;
 }
 .card2-container {
@@ -70,13 +70,12 @@
   padding: 10;
   background-color:greenyellow;
   text-align: center ;
-  width: 200px;
+  width: 270px;
   height: 150px;
 
 }
 
-.card{
+.center{
   display: flex;
-justify-content: center;
-
+  justify-content: center;
 }

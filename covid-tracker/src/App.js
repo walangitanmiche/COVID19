@@ -8,20 +8,14 @@ import {Global, Indonesia, Provinsi} from "./pages";
 const App = () => {
     return (
         <Router>
-          <h1>Covid Tracker</h1>
+          
             <div>
                 <nav>
                     <ul>
-                        <li>
-                            
-                            <Link to="/Global">Global</Link>
-                        </li>
-                        <li>
-                            <Link to="/Indonesia">Indonesia</Link>
-                        </li>
-                        <li>
-                            <Link to="/Provinsi">Per Provinsi</Link>
-                        </li>
+                        <h1 className="center">Covid Tracker</h1>
+                        <Link to="/Global" className="center">Global</Link>
+                        <Link to="/Indonesia" className="center">Indonesia</Link>
+                        <Link to="/Provinsi" className="center">Per Provinsi</Link>
                     </ul>
                 </nav>
             <Switch>

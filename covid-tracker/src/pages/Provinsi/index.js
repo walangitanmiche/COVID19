@@ -35,13 +35,13 @@ const Provinsi = () =>{
                                {item.provinsi}
                            </td>
                            <td>
-                           {item.kasusPosi}
+                                <NumberFormat value={item.kasusPosi} displayType={'text'} thousandSeparator={true}/>
                            </td>
                            <td>
-                               {item.kasusSemb}
+                           <NumberFormat value={item.kasusSemb} displayType={'text'} thousandSeparator={true}/>
                            </td>
                            <td>
-                               {item.kasusMeni}
+                           <NumberFormat value={item.kasusMeni} displayType={'text'} thousandSeparator={true}/>
                            </td>
                        </tr>
                    )

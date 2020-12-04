@@ -1,6 +1,6 @@
 import React, {useEffect, useState} from 'react';
 import axios from "axios";
-import Card from "./index";
+
 
 const Global = () =>{
     const[con, setCon] = useState([])
@@ -17,12 +17,25 @@ const Global = () =>{
          });
     }, []);
   
+    console.log(con);
+    console.log(rec);
+    console.log(det);
+
     return (
-        <div>
-        <p>confirmed: {con}</p>
-        <p>recovered: {rec}</p>
-        <p>deaths: {det}</p>
+    <div className="card">
+        
+            <h1 className ="card-container">
+               <p>Confirmed : {con}</p>
+            </h1>
+            <h1 className ="card1-container">
+                <p>Recovery : {rec}</p>
+            </h1>
+            <h1 className ="card2-container">
+                <p>Deaths : {det}</p>
+            </h1>
     </div>
+        
+    
             );
 };
 

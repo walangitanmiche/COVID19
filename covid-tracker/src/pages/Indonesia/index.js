@@ -4,7 +4,6 @@ import axios from "axios";
 const Indonesia = () =>{
     const[jum, setJum] = useState([])
     const[sembuh, setSembuh] = useState([])
-    const[per, setPer] = useState([])
     const[men, setMen] = useState([])
 
     useEffect(() => {
@@ -13,17 +12,24 @@ const Indonesia = () =>{
          .then((response) => {
             setJum(response.data.jumlahKasus)
             setSembuh(response.data.sembuh)
-            setPer(response.data.perawatan)
             setMen(response.data.meninggal)
         });
     }, []);
 
             return (
-                <div>
-        <p>Jumlah Kasus: {jum}</p>
-        <p>Sembuh: {sembuh}</p>
-        <p>Perawatan: {per}</p>
-        <p>Meninggal: {men}</p>
+                <div className="card">
+        
+                
+            <h1 className ="card-container">
+            <p>Confirmed : {jum}</p>
+            </h1>
+            <h1 className ="card1-container">
+               <p>Recovery : {sembuh}</p>
+            </h1>
+            
+            <h1 className ="card2-container">
+            <p>Deaths : {men}</p>
+            </h1>
     </div>
             );
             
